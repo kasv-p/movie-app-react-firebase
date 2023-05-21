@@ -1,0 +1,34 @@
+useeffect used whene we dont have to click on something or conditional rendering
+'''
+function MyComponent() {
+  if (someCondition) {
+    const [state, setState] = useState('initial value'); // Error: Hooks can only be called inside the body of a function component
+    // ...
+  }
+
+  // ...
+}
+'''
+In this case, you cannot use the hooks inside the conditional block. To solve this, you could either move the hooks outside the conditional block or refactor your component to handle the conditional rendering differently.
+when u r sending arguments to a function from ui in react u need to keep an arrow function like the below
+  <button onClick={() => deleteMovie(movie.id)}></button>
+  generally can keep like deleteMovie() if no argument is present
+
+
+firebase
+-------------
+no sql database
+analytics 
+can link ads account
+
+1.auth
+2.firestore database
+-- have request security first matches to the query and according to the permissions values are returned
+3.realtime database - offline stores in the cache
+4.storage for images,etc;
+5.hosting - deploying
+6.functions - backend code without servers ->charges
+
+rules -> for permissions in crud on collection in firebase database
+this is fully authenticating the user
+if request.auth!=null && request.auth.uid==request.resource.data.userId;
